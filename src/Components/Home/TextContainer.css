@@ -1,0 +1,82 @@
+.Maintxt {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4em;
+  width: 100%;
+  height: 25em;
+
+  text-align: center;
+  border-bottom-style: groove;
+  border-top-style: groove;
+  border-color: rgb(42, 163, 163);
+  background-color: #cac4c49f; /* Light gray */
+}
+
+.textContainer {
+  width: 50vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 4auto;
+  background-color: #cac4c49f; /* Light gray */
+}
+.headertxt {
+  padding-top: 5%;
+  display: flex;
+
+  font-size: 40px;
+  justify-content: center;
+  color: rgb(47, 79, 79);
+
+  text-align: center;
+  text-transform: uppercase;
+
+  /* Add a bounce animation */
+  animation-name: bounce-1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+/* Define the bounce animation */
+@keyframes bounce-1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bodytxt {
+  font-size: 1.5em;
+  color: rgb(47, 79, 79);
+  padding: 0 10%;
+}
+
+.buttontxt {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-self: center;
+  font-size: 1.8em;
+  color: rgb(47, 79, 79);
+  padding: 1% 1%;
+  width: 20%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 24px;
+  font-weight: 500;
+}
+.buttontxt:hover {
+  background-color: rgb(135, 135, 136);
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  .textContainer {
+    width: 100vw;
+  }
+}

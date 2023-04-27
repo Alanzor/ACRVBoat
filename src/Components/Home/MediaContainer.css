@@ -1,0 +1,30 @@
+.MainMedia {
+  width: 100%;
+  height: 40em;
+}
+
+.mediaOverlay {
+  display: flex;
+  z-index: 2;
+  background-color: black;
+}
+
+.MediaContainer {
+  display: flex;
+  width: 49.6vw;
+  height: auto;
+  overflow: hidden;
+}
+
+.mediaDivider {
+  display: flex;
+}
+
+@media (max-width: 1200px) {
+  .mediaDivider {
+    flex-wrap: wrap;
+  }
+  .MediaContainer {
+    width: 100vw;
+  }
+}

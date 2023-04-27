@@ -1,0 +1,15 @@
+.contactRowOne {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #cac4c49f; /* Light gray */
+}
+
+.contactPic {
+  background: ;
+  height: 25em;
+  width: 32em;
+
+  box-shadow: 10px 5px 5px rgb(131, 131, 131);
+}

@@ -1,0 +1,35 @@
+.Navbar {
+  margin: 0;
+  padding-left: 100px;
+  display: flex;
+  justify-content: space-around;
+  height: 5em;
+  background-color: #2f4f4f;
+}
+
+.navbtn {
+  padding: 0 1em;
+  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  background-color: #2f4f4f; /* Green */
+  border-radius: 4px;
+}
+.navbtn:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #355757;
+}
+
+.btnbox {
+  margin: 0;
+  width: 40em;
+  display: flex;
+  align-items: stretch;
+}
+
+.branding {
+  color: white;
+  font-size: 2.5em;
+}
