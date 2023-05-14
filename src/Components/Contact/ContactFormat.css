@@ -1,15 +1,23 @@
-.contactRowOne {
+.contact-row {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   background-color: #cac4c49f; /* Light gray */
+  padding: 30px 0;
+
+  gap: 2em;
 }
 
 .contactPic {
-  background: ;
   height: 25em;
-  width: 32em;
-
+  width: 30em;
   box-shadow: 10px 5px 5px rgb(131, 131, 131);
+}
+
+@media (max-width: 768px) {
+  .contactPic {
+    width: 100%;
+  }
 }

@@ -9,7 +9,7 @@ export default function ContactUs() {
   return (
     <div>
       <Contacttxt />
-      <div className="contactRowOne">
+      <div className="contact-row">
         <ContactForm />
         <ContactRVone />
       </div>

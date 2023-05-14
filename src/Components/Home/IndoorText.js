@@ -1,24 +1,43 @@
 import React from "react";
 import "./MediaContainer.css";
 import "./TextContainer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLock,
+  faPeopleGroup,
+  faBolt,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function OutdoorText() {
   return (
-    <div
-      className="textContainer"
-      style={{
-        borderRight: "groove rgb(42, 163, 163)",
-        borderTop: "groove rgb(42, 163, 163)",
-      }}
-    >
-      <text className="headertxt">Indoor Storage</text>
-      <text className="bodytxt">
-        If you want to protect your RV or boat from the elements, indoor storage
-        is the best option for you. Indoor storage offers a secure and
-        climate-controlled environment for your vehicle, keeping it safe from
-        dust, dirt, moisture, pests, and UV damage.
-      </text>
-      <a className="buttontxt" href="tel:4084255347">
+    <div className="textContainer">
+      <p className="header-text">Outdoor Storage</p>
+
+      <div className="subtext-container">
+        <div className="icon-text-box">
+          <FontAwesomeIcon className="home-icon" icon={faLock} />
+
+          <p className="body-text">
+            Secured with reliable fencing and 24/7 security cameras
+          </p>
+        </div>
+        <div className="icon-text-box">
+          <FontAwesomeIcon className="home-icon" icon={faPeopleGroup} />
+
+          <p className="body-text">
+            Family Owned an operated with over 15 years of experience
+          </p>
+        </div>
+        <div className="icon-text-box">
+          <FontAwesomeIcon className="home-icon" icon={faBolt} />
+
+          <p className="body-text">
+            Modern, clean, and well-maintained facilities{" "}
+          </p>
+        </div>
+      </div>
+
+      <a className="button-text" href="tel:4084255347">
         Call Today
       </a>
     </div>

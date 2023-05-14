@@ -1,21 +1,16 @@
 .Navbar {
   margin: 0;
-  padding-left: 100px;
   display: flex;
   justify-content: space-around;
-  height: 5em;
   background-color: #2f4f4f;
+  min-height: 100px;
 }
 
 .navbtn {
-  padding: 0 1em;
-  font-size: 1.5rem;
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  color: white;
   background-color: #2f4f4f; /* Green */
-  border-radius: 4px;
 }
 .navbtn:hover {
   transition: 0.3s ease-in-out;
@@ -27,9 +22,22 @@
   width: 40em;
   display: flex;
   align-items: stretch;
+  justify-content: center;
+}
+
+.navbutton-text {
+  font-size: calc(1vw + 6px);
+  background-color: transparent;
+  color: white;
+  padding: 0 10px;
 }
 
 .branding {
   color: white;
-  font-size: 2.5em;
+  font-size: calc(2vw + 10px);
+}
+.branding-box {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
 }

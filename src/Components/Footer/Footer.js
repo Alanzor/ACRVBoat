@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div class="footer">
       <link rel="stylesheet" href="path/to/fontawesome.min.css"></link>
-      <ul className="leftfooter">
+      <div className="leftfooter">
         <a class="footerTxt" href="tel:+14084255347">
           <FontAwesomeIcon icon="fas fa-phone fa-flip" />
           {/*creates phone icon*/}
@@ -16,10 +16,10 @@ export default function Footer() {
           <i class="fa fa-envelope" aria-hidden="true"></i>
           Send an Email: Swensens5@yahoo.com
         </a>
-      </ul>
-      <ul>
-        <p class="footerTxt">Copyright 2023 ACRV Storage</p>
-      </ul>
+      </div>
+      <div>
+        <p class="footerTxt">Copyright &copy; 2023 ACRV Storage</p>
+      </div>
     </div>
   );
 }

@@ -1,23 +1,41 @@
 import React from "react";
 import "./MediaContainer.css";
 import "./TextContainer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCaravan,
+  faWarehouse,
+  faMoneyBill,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function OutdoorText() {
   return (
-    <div
-      className="textContainer"
-      style={{
-        borderLeft: "groove rgb(42, 163, 163)",
-        borderBottom: "groove rgb(42, 163, 163)",
-      }}
-    >
-      <text className="headertxt">Outdoor Storage</text>
-      <text className="bodytxt">
-        Don’t let your RV or boat take up valuable space at home. Store it with
-        us in our outdoor storage. We have a variety of options to suit your
-        needs and budget. You’ll love our clean, well-lit, and fenced facility.
-      </text>
-      <a className="buttontxt" href="tel:4084255347">
+    <div className="textContainer">
+      <p className="header-text">Outdoor Storage</p>
+
+      <div className="subtext-container">
+        <div className="icon-text-box">
+          <FontAwesomeIcon className="home-icon" icon={faCaravan} />
+
+          <p className="body-text">
+            The Perfect place to store your RV or Boat
+          </p>
+        </div>
+        <div className="icon-text-box">
+          <FontAwesomeIcon className="home-icon" icon={faWarehouse} />
+
+          <p className="body-text">
+            We have Outdoor and Indoor storage options
+          </p>
+        </div>
+        <div className="icon-text-box">
+          <FontAwesomeIcon className="home-icon" icon={faMoneyBill} />
+
+          <p className="body-text">Always affordable with competitive rates</p>
+        </div>
+      </div>
+
+      <a className="button-text" href="tel:4084255347">
         Call Today
       </a>
     </div>

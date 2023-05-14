@@ -2,9 +2,9 @@ import React from "react";
 import "../Home/TextContainer.css";
 export default function Contacttxt() {
   return (
-    <div className="Maintxt">
-      <text className="headertxt">Contact Us</text>
-      <text className="bodytxt">
+    <div className="main-text">
+      <text className="header-text">Contact Us</text>
+      <text className="body-text">
         We are here to help you find the perfect RV or boat storage solution for
         your needs. We offer a variety of sizes and types of units to fit any
         budget, and we are committed to providing our customers with the highest
